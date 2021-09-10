@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <body>
+            
+        </body>
+    </head>
+</html>
+
+<script>
+    function komputer(plyta,ram,dysk,procesor,zasilacz,obudowa,kartagraficzna)
+    {
+        this.plyta=plyta;
+        this.ram=ram;
+        this.dysk=dysk;
+        this.procesor=procesor;
+        this.zasilacz=zasilacz;
+        this.obudowa=obudowa;
+        this.kartagraficzna=kartagraficzna;
+    }
+
+    ACER =new komputer(" B360 AORUS GAMING 3 WIFI"," Crucial Ballistix Black 32GB [2x16GB 3200MHz DDR4 CL16 DIMM]", " ADATA XPG SX8200 Pro 1TB SSD", " Intel Core i7-11700KF", " SilentiumPC Elementum", " SILENTIUM PC Regnum RG6V TG", " Nvidia GeForce RTX 3080");
+    HP =new komputer(" ASUS TUF GAMING B550-PLUS"," HyperX Fury RGB 16GB [2x8GB 3200MHz DDR4 CL16 XMP 1.35V DIMM]", " Crucial P5 M.2 PCI-e NVMe 500GB", " Intel Core i5-10400F", " Corsair CV 550W CP-9020210-EU", " SilentiumPC Signum SG1 M TG Pure Black", " AFOX GeForce GTX 750 4GB");
+    DELL =new komputer(" Gigabyte Z590 GAMING X"," HyperX Fury Black 32GB [2x16GB 2666MHz DDR4 CL16 XMP 1.2V DIMM]", " Samsung 870 Evo 500GB", " AMD Ryzen 5 5600G", " Chieftec GPB-400S", " Chieftec Hawk AL-02B-TG-OP", " ASUS GeForce GT 1030 2G OC");
+    SAMSUNG =new komputer(" ASUS PRIME B550M-A"," HyperX Fury RGB 32GB [2x16GB 3200MHz DDR4 CL16 DIMM]", " Samsung 970 Evo Plus M.2 500GB", " AMD Ryzen 5 1600 AF", " Chieftec GPB-400S", " SilentiumPC Ventum VT2 TG", " ASUS GeForce GT 730 2GB DDR5");
+
+    document.write("HP" + "<br>" + "Płyta główna" + HP.plyta + "<br>" + "Ram" + HP.ram + "<br>" + "Dysk Twardy" + HP.dysk + "<br>" + "Procesor" + HP.procesor + "<br>" + "Zasilacz" + HP.zasilacz + "<br>" + "Obudowa" + HP.obudowa + "<br>" + "Karta Graficzna" + HP.kartagraficzna);
+    document.write("DELL" + "<br>" + "Płyta główna" + DELL.plyta + "<br>" + "Ram" + DELL.ram + "<br>" + "Dysk Twardy" + DELL.dysk + "<br>" + "Procesor" + DELL.procesor + "<br>" + "Zasilacz" + DELL.zasilacz + "<br>" + "Obudowa" + DELL.obudowa + "<br>" + "Karta Graficzna" + DELL.kartagraficzna);
+    document.write("SAMSUNG" + "<br>" + "Płyta główna" + SAMSUNG.plyta + "<br>" + "Ram" + SAMSUNG.ram + "<br>" + "Dysk Twardy" + SAMSUNG.dysk + "<br>" + "Procesor" + SAMSUNG.procesor + "<br>" + "Zasilacz" + SAMSUNG.zasilacz + "<br>" + "Obudowa" + SAMSUNG.obudowa + "<br>" + "Karta Graficzna" + SAMSUNG.kartagraficzna);
+    document.write("ACER" + "<br>" + "Płyta główna" + ACER.plyta + "<br>" + "Ram" + ACER.ram + "<br>" + "Dysk Twardy" + ACER.dysk + "<br>" + "Procesor" + ACER.procesor + "<br>" + "Zasilacz" + ACER.zasilacz + "<br>" + "Obudowa" + ACER.obudowa + "<br>" + "Karta Graficzna" + ACER.kartagraficzna);
+</script>
