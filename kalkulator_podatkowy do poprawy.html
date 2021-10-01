@@ -1,0 +1,90 @@
+<!doctype html>
+    <html>
+        <head>
+            <title> Kalkulator Bartosiak </title>
+                <meta charset="UTF-8"/>
+        </head>
+            <body>
+                <h1> Kalkulator Podatkowy </h1>
+                 
+                <script>
+                     
+                function podatek1(formularz)
+                {
+                    if (formularz.liczba1.value =="" ) // Sprawdzanie czy są wpisane liczby
+                        alert("Podaj liczby!"); // Sprawdzanie czy są wpisane liczby
+                     
+                    else if (formularz.liczba1.value <= -1 ) // Sprawdzanie czy liczby nie są ujemne
+                        alert("Proszę podaj liczby, które nie są ujemne."); // Sprawdzanie czy liczby nie są ujemne
+                     
+                    else
+                    {
+                        a=formularz.liczba1.value;
+                        formularz.wynik.value=a*3;
+                    }
+                }
+
+                function podatek2(formularz)
+                {
+                    if (formularz.liczba1.value =="" ) // Sprawdzanie czy są wpisane liczby
+                        alert("Podaj liczby!"); // Sprawdzanie czy są wpisane liczby
+                     
+                    else if (formularz.liczba1.value <= -1 ) // Sprawdzanie czy liczby nie są ujemne
+                        alert("Proszę podaj liczby, które nie są ujemne."); // Sprawdzanie czy liczby nie są ujemne
+                     
+                    else
+                    {
+                        a=formularz.liczba1.value;
+                        formularz.wynik.value=a*16;
+                    }
+                }
+
+                function podatek3(formularz)
+                {
+                    if (formularz.liczba1.value =="" ) // Sprawdzanie czy są wpisane liczby
+                        alert("Podaj liczby!"); // Sprawdzanie czy są wpisane liczby
+                     
+                    else if (formularz.liczba1.value <= -1 ) // Sprawdzanie czy liczby nie są ujemne
+                        alert("Proszę podaj liczby, które nie są ujemne."); // Sprawdzanie czy liczby nie są ujemne
+                     
+                    else
+                    {
+                        a=formularz.liczba1.value;
+                        formularz.wynik.value=a*5;
+                    }
+                }
+
+                function podatek4(formularz)
+                {
+                    if (formularz.liczba1.value =="" ) // Sprawdzanie czy są wpisane liczby
+                        alert("Podaj liczby!"); // Sprawdzanie czy są wpisane liczby
+                     
+                    else if (formularz.liczba1.value <= -1 ) // Sprawdzanie czy liczby nie są ujemne
+                        alert("Proszę podaj liczby, które nie są ujemne."); // Sprawdzanie czy liczby nie są ujemne
+                     
+                    else
+                    {
+                        a=formularz.liczba1.value;
+                        formularz.wynik.value=a*9;
+                    }
+                }
+                 
+                </script>
+                 
+                <form name="formularz">
+                    
+                Podaj kwotę do opodatkowania:  <input type="text" name="liczba1"><br><br>
+                
+                <input type="button" value="Oblicz podatek przy ryczałcie" onClick="podatek1(this.form)">            
+                <input type="button" value="Oblicz podatek przy podatku liniowym" onClick="podatek2(this.form)">
+                <input type="button" value="Oblicz podatek przy karcie podatkowej" onClick="podatek3(this.form)">
+                <input type="button" value="Oblicz podatek przy podatku progresywnym" onClick="podatek4(this.form)"><br><br>
+
+                Kwota po opodatkowaniu: <input type="text" name="wynik"><br><br>
+
+                
+                 
+                </form>
+                 
+            </body>
+    </html>
